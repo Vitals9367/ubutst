@@ -3,7 +3,9 @@ FROM ubuntu:18.04
 # Updates
 RUN apt-get update -y 
 
+# Etc
 RUN apt-get install -y wget
+RUN apt-get install -y lsb-release && apt-get clean all
 
 # Networking
 RUN apt-get install -y telnet
