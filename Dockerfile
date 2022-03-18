@@ -8,7 +8,7 @@ RUN apt-get install -y telnet
 RUN apt-get install -y traceroute
 
 # MySQL client
-RUN apt-get install mysql-shell
+RUN apt-get install mysql-client
 
 # Postgres client
 RUN sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
