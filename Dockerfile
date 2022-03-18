@@ -7,6 +7,7 @@ RUN apt-get update -y
 RUN apt-get install -y wget
 RUN apt-get install -y gnupg2
 RUN apt-get install -y lsb-release && apt-get clean all
+RUN apt-get install -y vim
 
 # Networking
 RUN apt-get install -y telnet
