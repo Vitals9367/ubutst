@@ -5,6 +5,7 @@ RUN apt-get update -y
 
 # Etc
 RUN apt-get install -y wget
+RUN apt-get install -y gnupg2
 RUN apt-get install -y lsb-release && apt-get clean all
 
 # Networking
