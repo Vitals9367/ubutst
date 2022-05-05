@@ -1,7 +1,10 @@
 FROM alpine
 
 # Updates
-RUN apk update -y && \
+# RUN apk update -y && \
+
+# # MySQL client
+RUN apk install -y mysql-client
 
 # Etc
 # apt install -y curl && \
@@ -13,9 +16,6 @@ RUN apk update -y && \
 # # Networking
 # apt-get install -y telnet && \
 # apt-get install -y traceroute && \
-
-# # MySQL client
-apk install -y mysql-client
 
 # # Postgres client
 # sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' && \
