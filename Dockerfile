@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM alpine
 
 # Updates
 RUN apt-get update -y && \
