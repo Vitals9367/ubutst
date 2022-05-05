@@ -8,7 +8,7 @@ RUN apt-get update -y && \
 
 # Etc
 # apt install -y curl && \
-# apt-get install -y wget  && \
+apt-get install -y wget  && \
 apt-get install -y gnupg2 && \
 apt-get install -y lsb-release && apt-get clean all && \
 # apt-get install -y vim && \
