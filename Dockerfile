@@ -1,10 +1,10 @@
-FROM alpine
+FROM ubuntu
 
 # Updates
-# RUN apk update -y && \
+RUN apt-get update -y && \
 
 # # MySQL client
-RUN apk add mysql-client
+apt-get install -y mysql-client
 
 # Etc
 # apt install -y curl && \
