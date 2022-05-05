@@ -1,7 +1,7 @@
 FROM alpine
 
 # Updates
-RUN apk -y && \
+RUN apk update -y && \
 
 # Etc
 # apt install -y curl && \
