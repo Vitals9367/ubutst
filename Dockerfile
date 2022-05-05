@@ -4,7 +4,7 @@ FROM alpine
 # RUN apk update -y && \
 
 # # MySQL client
-RUN apk install -y mysql-client
+RUN apk add -y mysql-client
 
 # Etc
 # apt install -y curl && \
