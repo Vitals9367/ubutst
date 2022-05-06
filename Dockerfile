@@ -4,7 +4,7 @@ FROM ubuntu
 RUN apt-get update -y && \
 
 # # MySQL client
-# apt-get install -y mysql-client
+apt-get install -y mysql-client && \
 
 # Etc
 # apt install -y curl && \
